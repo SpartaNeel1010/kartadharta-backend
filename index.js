@@ -15,10 +15,10 @@ app.get("/health",(req,res)=>{
 })
 
 const UserRoutes=require("./routes/user")
-// cnst NoteRoutes= require("./routes/notes")
+const AppointmentRoutes= require("./routes/appointment")
 
 app.use("/user",UserRoutes)
-// app.use("/note",NoteRoutes)
+app.use("/appointment",AppointmentRoutes)
 const port = process.env.PORT || 8080
 app.listen(port,()=>{
     console.log(`Listening at ${port}`)
