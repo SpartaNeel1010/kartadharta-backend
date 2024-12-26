@@ -73,7 +73,7 @@ router.post('/create', async (req, res) => {
         // Email content for yourself
         const adminMailOptions = {
             from: 'kartadharta.maid@gmail.com',
-            to: 'shahneel1309@gmail.com',
+            to: 'rutvik.p23@imi.edu',
             subject: 'New Appointment Booked',
             text: `New appointment booked:\n\nUser Details:\nName: ${userDetails.name}\nEmail: ${userDetails.email}\nPhone: ${userDetails.phone}\nAddress: ${userDetails.address1}\n${userDetails.address2}\n${userDetails.zipCode}\n\nAppointment Details:\nDate: ${formattedDate}\nTime: ${time}\nService: ${service}\nComments: ${comments || 'N/A'}`,
         };
